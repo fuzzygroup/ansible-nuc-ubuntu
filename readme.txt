@@ -1,0 +1,1 @@
+ ansible-galaxy install rvm_io.ruby

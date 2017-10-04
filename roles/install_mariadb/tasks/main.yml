@@ -1,0 +1,10 @@
+---
+- name: Install mariadb and set root password
+  apt: pkg={{ item }}
+       state=present
+  with_items:
+    #- libmariadbclient-dev
+    - mariadb-server
+#
+#todo set root password and create database
+#

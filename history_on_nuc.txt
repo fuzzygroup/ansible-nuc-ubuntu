@@ -1,0 +1,286 @@
+    1  ls ~/.ssh
+    2  ls -al ~
+    3  du -hc ~/Dropbox/
+    4  du -hc ~/Dropbox/ | wc -l
+    5  ps auwwx | grep Drop
+    6  du -hc ~/Dropbox/ | wc -l
+    7  ln -s ~/me ~/Dropbox
+    8  cd ~/me
+    9  ls -l 
+   10  pwd
+   11  ls -al
+   12  cd ~/me
+   13  sudo apt-get install ansible 
+   14  cd ~/Dropbox/fuzzygroup/ansible/
+   15  ls
+   16  mkdir nuc
+   17  cd nuc
+   18  mkdir roles
+   19  mkdir roles/pbcopy
+   20  atom . 
+   21  touch playbook_nuc.yml
+   22  atom playbook_nuc.yml 
+   23  nano -w playbook_nuc.yml 
+   24  atom . 
+   25  atom 
+   26  cd ..
+   27  wc -l *
+   28  du -hc * 
+   29  du -hc *  | wc -l
+   30  cd fuzzygroup/ansible/nuc/
+   31  ls
+   32  nano -w playbook_nuc.yml 
+   33  du -hc *  | wc -l
+   34  du -hc ~/Dropbox/  | wc -l
+   35  cd ~/Dropbox/
+   36  du -hc ~/Dropbox/  | wc -l
+   37  du -hc fuzzygroup/ | wc -l 
+   38  du -hc appdatallc | wc -l
+   39  ps -ef | grep dropbox
+   40  dropbox start
+   41  ps -ef | grep dropbox
+   42  kill -9 23080
+   43  ps -ef | grep dropbox
+   44  du -hc ~/Dropbox | wc -l
+   45  cd ~
+   46  ls
+   47  cd Desktop/
+   48  ls
+   49  atom . 
+   50  du -hc ~/Dropbox | wc -l
+   51  initctl restart unity-panel-service
+   52  unity
+   53  mate-panel --reset
+   54  /sbin/reboot
+   55  apt-get install rvm 
+   56  sudo apt-get install rvm 
+   57  ls
+   58  cd ansible-nuc-ubuntu/
+   59  less playbook_nuc.yml 
+   60  aBreakfast:
+   61  * GF swedish pancakes
+   62  * little smokies
+   63  Sides:
+   64  * Cranberry orange relish
+   65  * Cornbread stuffing (can be done on the side or in bird)
+   66  * Gravy (give me drippings and I'll give you gravy)
+   67  * Brazilian Cheese Rolls
+   68  * Mashed Potatoes
+   69  * Mashed Sweet Potatoes
+   70  less playbook_nuc.yml 
+   71  ansible-playbook -i inventories/hosts playbook_nuc.yml
+   72  ansible --version
+   73  ansible-playbook -i inventories/hosts playbook_nuc.yml
+   74  ansible-galaxy install rvm_io.ruby
+   75  ansible-playbook -i inventories/hosts playbook_nuc.yml
+   76  ls ~/.rvm/
+   77  rvm
+   78  atom .
+   79  curl -sSL https://get.rvm.io | bash -s stable
+   80  ansible-playbook -i inventories/hosts playbook_nuc.yml
+   81  curl -sSL https://get.rvm.io | bash -s stable
+   82  rvm
+   83  source ~/.rvm/scripts/rvm 
+   84  rvm
+   85  rvm install 2.3.1
+   86  less /etc/apt/sources.list
+   87  ifocnfig
+   88  ifconfig
+   89  ping google.com
+   90  history ~/history_5.txt
+   91  history > ~/history_5.txt
+   92  cd ~/Dropbox/appdatallc/banks/script/ansible/roles/
+   93  ls
+   94  cd ruby
+   95  ls
+   96  cd tasks/
+   97  ls
+   98  cat main.yml 
+   99  s .
+  100  sublime-desktop .
+  101  atom .
+  102  cd ..
+  103  ls
+  104  cd ..
+  105  ls
+  106  atom . 
+  107  ansible-galaxy install rvm_io.rvm1-ruby
+  108  sudo ansible-galaxy install mtpereira.erlang
+  109  sudo ansible-galaxy install rvm_io.rvm1-ruby
+  110  ansible-galaxy install rvm_io.rvm1-ruby
+  111  sudo ansible-galaxy install rvm_io.ruby
+  112  history > ~/history4.txt
+  113  which sublime_text
+  114  nano ~/.local/share/applications/sublime.desktop
+  115  nano ~/.local/share/applications/mimeapps.list
+  116  history ~/history4.txt
+  117  cd ~/Dropbox/fuzzygroup/ansible/
+  118  ls
+  119  cd nuc
+  120  ls
+  121  atom . 
+  122  ansible
+  123  ansible-playbook playbook_nuc.yml
+  124  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  125  sudo visudo
+  126  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  127  xdg-mime .
+  128  xdg-mime
+  129  cat ~/.config/mimeapps.list
+  130  nano -w ~/.config/mimeapps.list
+  131  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  132  ansible-galaxy install mtpereira.erlang
+  133  sudo ansible-galaxy install mtpereira.erlang
+  134  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  135  sudo ansible-playbook -i inventories/hosts playbook_nuc.yml
+  136  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  137  less roles/install_apache2/tasks/main.yml 
+  138  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  139  sudo vi /etc/hostname 
+  140  sudo vi /etc/hosts
+  141  sudo service hostname restart
+  142  cd ..
+  143  sudo service hostname restart
+  144  sudo /etc/init.d/hostname restart
+  145  sudo service hostname restart
+  146  hostnamectl set-hostname 'fuzzygroupnuc'
+  147  pwd
+  148  history > ~/history3.txt
+  149  cd ~/Dropbox/appdatallc/ansible/
+  150  ls
+  151  atom playbook_appdata_proxy.yml
+  152  less playbook_delete_all_releases_and_current.yml 
+  153  ls ~/.ssh
+  154  cd roles/install_squid/
+  155  ls
+  156  cd tasks
+  157  ls
+  158  cat main.yml 
+  159  nano -w main.yml 
+  160  which sh
+  161  history > ~/history_tab2.txt
+  162  dropbox filestatus
+  163  cd ~/Dropbox/fuzzygroup/blog
+  164  ls -ltr _posts
+  165  dropbox filestatus
+  166  ls -ltr _posts
+  167  ls -ltr _drafts
+  168  history > ~/history_tab1.txt
+  169  ping google.com
+  170  cd ~/Dropbox/blog
+  171  cd ~/Dropbox/fuzzygroup/blog
+  172  atom _posts/2016-12-06-accessing-mariadb-without-sudo-on-ubuntu.md 
+  173  nano _posts/2016-12-06-accessing-mariadb-without-sudo-on-ubuntu.md 
+  174  ping google.com
+  175  ifconfig
+  176  ping google.com
+  177  cd ~/Dropbox/fuzzygroup/ansible/ansible-macbook-pro/
+  178  git pull origin master
+  179  rvm 
+  180  ls ~/.ssh
+  181  pwd
+  182  ls -al
+  183  cd Dropbox/fuzzygroup/ansible/ansible-nuc-ubuntu/
+  184  ls
+  185  less playbook_nuc.yml 
+  186  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  187  ls -l 
+  188  dropbox
+  189  ls -l 
+  190  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  191  ls -al .ssh
+  192  ls ~/.ssh
+  193  ansible-playbook -i inventories/hosts playbook_nuc.yml
+  194  ssh-keygen -b 2048 -t rsa /home/sjohnson/.ssh/id_rsa -q -N ""
+  195  ssh-keygen -b 2048 -t rsa /home/sjohnson/.ssh/id_rsa -q -N 
+  196  ssh-keygen -q -b 2048 -t rsa /home/sjohnson/.ssh/id_rsa -N ""
+  197  ssh-keygen -q -b 2048 -t rsa /home/sjohnson/.ssh/id_rsa
+  198  ssh-keygen -q -b2048 -t rsa /home/sjohnson/.ssh/id_rsa
+  199  ssh-keygen -t rsa -b 4096 -C "fuzzygroup@gmail.com" 
+  200  ssh-keygen -t rsa -b 4096 -C "fuzzygroup@gmail.com" /home/sjohnson/.ssh/id_rsa
+  201  ssh-keygen -t rsa -b 4096 -C "fuzzygroup@gmail.com"
+  202  eval "$(ssh-agent -s)"
+  203  ssh-add ~/.ssh/id_rsa
+  204  cat ~/.ssh/id_rsa.pub 
+  205  sudo apt-get install nomachine
+  206  ifconfig
+  207  cd ~/Dropbox/appdatallc/appdatapro
+  208  cat .ruby-gemset 
+  209  rvm gemset create adp_rails3
+  210  rvm use ruby-2.1.0
+  211  rvm gemset create adp_rails3
+  212  cd ~/Dropbox/appdatallc/banks
+  213  cd ~/Dropbox/appdatallc/appdatapro
+  214  ls
+  215  rvm list
+  216  rmv install ruby-1.9.3
+  217  rvm install ruby-1.9.3
+  218  rvm install ruby-2.1.0
+  219  rvm install ruby-2.3.0
+  220  apt-get update
+  221  sudo apt-get update
+  222  ls -l  /etc/apt/sources.list
+  223  sudo vi /etc/apt/sources.list
+  224  sudo apt-get update
+  225  sudo vi /etc/apt/sources.list
+  226  ls -l  /etc/apt/sources.list.d/*.list
+  227  cd /etc/apt/sources.list.d/
+  228  ls -l 
+  229  mv ppa_rael_gc_rvm_yakkety.list ~
+  230  sudo mv ppa_rael_gc_rvm_yakkety.list ~
+  231  sudo apt-get update
+  232  rvm install ruby-2.1.0
+  233  rvm install ruby-2.3.0
+  234  ssh appdatapro@db1.appdata.com
+  235  ls ~/.ssh
+  236  ping google.com
+  237  sudo apt-get install macsyma
+  238  sudo dpkg --configure -a
+  239  sudo apt-get install macsyma
+  240  sudo apt-get install maxima
+  241  apt-get -f install
+  242  sudo apt-get -f install
+  243  sudo apt-get install maxima
+  244  maxima
+  245  cd ~/Dropbox/fuzzygroup/hyde/hyde_site/
+  246  rvm use ruby-2.3.1@hyde_site
+  247  bundle install
+  248  gem install bundler
+  249  bundle install
+  250  bundle exec rake db:create
+  251  mysql -uroot -p 
+  252  bundle exec rake initialize:all --trace
+  253  bin/rails c
+  254  gem install bundler
+  255  bundle exec rake initialize:all --trace
+  256  ls
+  257  bundle exec rails c
+  258  sudo apt-get install node
+  259  sudo apt-get install nodejs
+  260  bundle exec rails c
+  261  bundle exec rake db:migrate
+  262  ls
+  263  mysql -uroot -p hyde_development < hyde_development.sql 
+  264  bundle exec rails c 
+  265  cd ~/Dropbox/fuzzygroup/hyde/
+  266  ls
+  267  cd hyde_site
+  268  ls
+  269  ruby --version
+  270  bundle install
+  271  sudo gem install bundler
+  272  ls -al 
+  273  ruby --version
+  274  rvm use ruby-2.3.1
+  275  rvm list rubies
+  276  rvm install ruby-2.3.1
+  277  rvm gemset create hyde_site --create
+  278  ls -al 
+  279  rvm use ruby-2.3.1@hyde_site
+  280  cd ~/Dropbox/fuzzygroup/ansible/
+  281  ls
+  282  cd ansible-nuc-ubuntu/
+  283  ls
+  284  Code playbook_nuc.yml 
+  285  nano -w playbook_nuc.yml 
+  286  history > history_on_nuc.txt

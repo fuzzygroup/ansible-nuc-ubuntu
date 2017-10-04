@@ -1,0 +1,7 @@
+---
+- name: Install aws cli
+  apt: pkg={{ item }}
+       state=installed
+  with_items:
+    - python-boto
+    - awscli

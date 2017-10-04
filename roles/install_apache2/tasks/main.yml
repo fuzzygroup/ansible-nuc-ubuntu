@@ -1,0 +1,120 @@
+---
+- name: install apache2
+  apt: pkg={{ item }}
+       state=present
+  with_items:
+      - apache2
+      - libaprutil1-dev
+      - libmysqlclient-dev
+#      - apache2-threaded-dev
+  
+
+# - name: Install apache2 and passenger
+#   apt: pkg={{ item }}
+#        state=present
+#   with_items:
+#     # - name: install apache2
+#     #      apt: name=apache2 update_cache=yes state=latest
+#     - apache2
+#     - name: enabled mod_rewrite
+#           apache2_module: name=rewrite state=present
+#
+#     - apache2-threaded-dev
+#     - passenger-install-apache2-module
+#         #130  sudo apt-get install -y libapache2-mod-passenger
+#         #131  sudo a2enmod passenger
+#
+#     # todo site configuration
+  # - name: install apache2 dependencies
+  #   apt: pkg={{ item }} state=present
+  #   with_items:
+  #     #- apache2
+  #     - libaprutil1-dev
+  #     - libmysqlclient-dev
+  #     - apache2-threaded-dev
+  #
+  # - name: disable default apache site
+  #   file: state=absent dest=/etc/apache2/sites-enabled/000-default
+  #   notify: apache restart
+  #
+  # - name: install config file for apache
+  #   template: src=roles/apache2/files/banks.conf dest=/etc/apache2/sites-enabled//banks.conf
+  #   #notify: restart_apache2
+  #   notify: start_apache2
+  #   sudo: yes
+  #
+  # - name: remove symlink on default config supplied by apache that overrides our installed file
+  #   file: path=/etc/apache2/sites-enabled/000-default.conf state=absent
+      
+  #- name: install config file for apache
+  
+      #- passenger-install-apache2-module
+      #- passenger
+      
+  # - name: install apache2modules
+  #   apache2_module: pkg={{ item }} state=present
+  #   with_items:
+  #     - rewrite
+      #- libapache2-mod-passenger
+    
+    # apt: name=apache2 update_cache=yes state=present
+    # apt: name=apache2-threaded-dev update_cache=yes state=present
+    # apt: name=passenger-install-apache2-module update_cache=yes state=present
+    # apache2_module: name=rewrite state=present
+    # apache2_module: libapache2-mod-passenger state=present
+    
+  # - name: libapache2-mod-passenger
+  #   apache2_module: libapache2-mod-passenger state=present
+    
+  # - name: enabled passenger
+  #   apache2_module: name=passenger state=present
+  
+  
+  # FROM: https://www.digitalocean.com/community/tutorials/how-to-configure-apache-using-ansible-on-ubuntu-14-04
+    # ---
+    # - hosts: apache
+    #   sudo: yes
+    #
+    #   vars:
+    #     http_port: 80
+    #     domain: example.com
+    #
+    #   tasks:
+    #
+    #     - name: install packages
+    #       apt: name={{ item }} update_cache=yes state=latest
+    #       with_items:
+    #         - apache2
+    #         - git
+    #
+    #     - name: enabled mod_rewrite
+    #       apache2_module: name=rewrite state=present
+    #       notify:
+    #         - restart apache2
+    #
+    #     - name: apache2 listen on port {{ http_port }}
+    #       lineinfile: dest=/etc/apache2/ports.conf regexp="^Listen " line="Listen {{ http_port }}" state=present
+    #       notify:
+    #         - restart apache2
+    #
+    #     - name: apache2 virtualhost on port {{ http_port }}
+    #       lineinfile: dest=/etc/apache2/sites-available/000-default.conf regexp="^<VirtualHost \*:" line="<VirtualHost *:{{ http_port }}>"
+    #       notify:
+    #         - restart apache2
+    #
+    #     - name: create virtual host file
+    #       template: src=virtualhost.conf dest=/etc/apache2/sites-available/{{ domain }}.conf
+    #
+    #     - name: a2ensite {{ domain }}
+    #       command: a2ensite {{ domain }}
+    #       args:
+    #         creates: /etc/apache2/sites-enabled/{{ domain }}.conf
+    #       notify:
+    #         - restart apache2
+    #
+    #     - name: clone basic html template
+    #       git: repo=https://github.com/do-community/ansible-apache-tutorial.git dest=/var/www/example.com update=no
+    #
+    #   handlers:
+    #     - name: restart apache2
+    #       service: name=apache2 state=restarted

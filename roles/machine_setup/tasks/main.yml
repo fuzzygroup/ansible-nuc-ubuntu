@@ -1,0 +1,2 @@
+#http://askubuntu.com/questions/9540/how-do-i-change-the-computer-name?newreg=c90ca7c8e77c419ab1326cb590bdc20e
+#hostnamectl set-hostname 'new-hostname'

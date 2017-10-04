@@ -1,0 +1,31 @@
+--- 
+  
+- name: install build_essential and patch
+  apt: name=build-essential state=present
+  
+- name install patch
+  apt: name=patch state=present
+  
+- name: install ruby-dev
+  apt: name=ruby-dev state=present
+  
+- name: install ruby-dev
+  apt: name=zlib1g-dev state=present
+
+- name: install ruby-dev
+  apt: name=liblzma state=present
+  
+- name: install libxslt-dev
+  apt: name=libxslt-dev state=present
+
+- name: install libxml2-dev
+  apt: name=libxml2-dev state=present
+  
+- name: install libbz2-dev
+  apt: name=libbz2-dev state=prese
+  
+- name: install libcurl3-dev
+  apt: name=libcurl3-dev state=prese
+  
+- name: install libevent-dev
+  apt: name=libevent-dev state=prese

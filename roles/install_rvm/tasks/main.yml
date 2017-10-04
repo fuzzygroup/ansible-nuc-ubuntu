@@ -1,0 +1,55 @@
+---
+  
+# - name: install_rvm_repo
+#   apt_repository:
+#     repo: "ppa:rael-gc/rvm"
+#     update_cache: yes
+#
+# - name: install_rvm
+#   apt:
+#     package: rvm
+#     state: present
+
+#https://gorails.com/setup/ubuntu/16.10
+  
+- name: install_role_dependencies
+  apt: pkg={{ item }} state=present
+  with_items: 
+    - libgdbm-dev 
+    - libncurses5-dev 
+    - automake 
+    - libtool 
+    - bison 
+    - libffi-dev
+    - curl
+    - wget
+    
+- name: install keyserver 
+  shell: " gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3"
+  
+- name: rvm_curl
+  shell: "curl -sSL https://get.rvm.io | bash -s stable"
+  
+- name: source_it
+  shell: "source ~/.rvm/scripts/rvm"
+  
+- name: install2.3.1
+  shell: "rvm install 2.3.1"
+  
+- name: "set the default ruby"
+  shell: "rvm use 2.3.1 --default"
+  #
+  # sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+  # gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  #
+  #
+  #
+  #
+  # ruby -v
+  
+  
+  
+#http://askubuntu.com/questions/128966/how-do-i-install-ruby-rvm
+# sudo apt-add-repository -y ppa:rael-gc/rvm
+# sudo apt-get update
+# sudo apt-get install rvm

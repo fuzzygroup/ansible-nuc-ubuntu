@@ -1,0 +1,25 @@
+---
+
+# https://github.com/ManuelSchneid3r/albert/wiki/User-guide#how-to-install-albert
+
+#sudo add-apt-repository ppa:nilarimogard/webupd8
+#sudo apt-get update
+#sudo apt-get install albert
+
+- name: add repository
+  #shell: "add-apt-repository ppa:nilarimogard/webupd8"
+  apt_repository: repo='ppa:nilarimogard/webupd' state=present
+  
+
+#- name: run update
+#  apt:
+#    upgrade_cache: "yes"
+
+# - name: run apt-get update to get the box up to date
+#   #apt: update_cache=yes valid_time=3600
+#   shell: "sudo apt-get update"
+
+- name: install
+  apt:
+    name: "albert"
+    state: "present"

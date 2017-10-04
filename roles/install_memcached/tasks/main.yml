@@ -1,0 +1,9 @@
+---
+- name: Install memcached and header libs
+  apt: pkg={{ item }}
+       state=present
+  with_items:
+    - memcached
+
+# - name: turn off memcached from starting
+#   service: name=memcached enabled=no state=stopped

@@ -1,0 +1,47 @@
+---
+
+# ansible-playbook -i inventories/hosts playbook_nuc.yml
+
+# install atom
+
+# install sublime
+
+# install pb copy
+
+# install apache
+
+# install rvm
+
+# install mariadb
+
+# install albert
+
+# note - have to configure sudoers first: http://stackoverflow.com/questions/37434598/ansible-sudo-without-password
+# note - sublime: https://gist.github.com/carlos-jenkins/3277fa8ecc757f2284a924c9838f2040#id3
+# ansible-galaxy install rvm_io.ruby
+
+sudo add-apt-repository ppa:philip5/extra
+sudo apt update
+sudo apt install digikam5
+
+
+
+- hosts: all
+  connection: local
+  become: yes
+  gather_facts: true
+  vars: 
+    - username: sjohnson
+  roles:
+    #- {role: install_albert, tags: install_albert}
+    - {role: install_mysql_header, tags: mysql}
+    - {role: install_mariadb, tags: mysql}
+    - {role: install_aws_cli, tags: aws}
+    - {role: install_apache2, tags: apache2 }
+    - {role: install_memcached, tags: memcached }
+    - {role: system_generate_ssh_keys, tags: system}
+    #- {role: rvm_io.ruby, tags: ruby, rvm_rubies: ['ruby-2.3.1'], rvm_user: 'sjohnson' }
+    #- {role: install_rvm, tags: ruby}
+    #- {role: install_rvm, tags: install_rvm }
+    #- { role: rvm_io.ruby, tags: rvm, become: yes, rvm1_rubies: 'ruby-2.3.1', rvm1_default_ruby_version: 'ruby-2.3.1', force: yes, rvm1_install_bundler: true, rvm_install_type: user}
+    #- { role: rvm_io.ruby, tags: rvm, rvm_install_type: system, rvm_default_ruby_version: 'ruby-2.3.1', rvm_install_bundler: true}

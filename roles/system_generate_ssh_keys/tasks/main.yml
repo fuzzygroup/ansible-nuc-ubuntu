@@ -1,0 +1,11 @@
+- name: Generate SSH keys
+  #shell: ssh-keygen -b 2048 -t rsa -f  /home/sjohnson/.ssh/id_rsa -q -N ""
+  shell: ssh-keygen -t rsa -b 4096 -C "fuzzygroup@gmail.com"
+  args:
+    creates: /home/sjohnson/.ssh/id_rsa
+    
+- name: start ssh agent
+  shell: eval "$(ssh-agent -s)"
+
+- name: add key to agent
+  shell: ssh-add ~/.ssh/id_rsa
